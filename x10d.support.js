@@ -49,15 +49,15 @@
               
               	@include:
               		{
+              			"burne": "burne",
               			"falzy": "falzy",
-              			"harden": "harden",
               			"protype": "protype"
               		}
               	@end-include
               */var _for = require("babel-runtime/core-js/symbol/for");var _for2 = _interopRequireDefault(_for);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
+var burne = require("burne");
 var falzy = require("falzy");
-var harden = require("harden");
 var protype = require("protype");
 
 var EXTENSIVE = (0, _for2.default)("extensive");
@@ -75,7 +75,7 @@ var x10d = function x10d(blueprint) {
 		throw new Error("invalid blueprint");
 	}
 
-	harden(EXTENSIVE, EXTENSIVE, blueprint);
+	burne(EXTENSIVE, blueprint);
 
 	return blueprint;
 };

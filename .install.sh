@@ -1,7 +1,7 @@
 yarn add \
 babel-runtime \
+burne \
 falzy \
-harden \
 protype \
 --save && \
 yarn add \
@@ -13,8 +13,8 @@ source-map-loader \
 webpack \
 --dev && \
 bower install \
+burne \
 falzy \
-harden \
 protype \
 --save \
 --force-latest

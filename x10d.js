@@ -49,15 +49,15 @@
 
 	@include:
 		{
+			"burne": "burne",
 			"falzy": "falzy",
-			"harden": "harden",
 			"protype": "protype"
 		}
 	@end-include
 */
 
+const burne = require( "burne" );
 const falzy = require( "falzy" );
-const harden = require( "harden" );
 const protype = require( "protype" );
 
 const EXTENSIVE = Symbol.for( "extensive" );
@@ -75,7 +75,7 @@ const x10d = function x10d( blueprint ){
 		throw new Error( "invalid blueprint" );
 	}
 
-	harden( EXTENSIVE, EXTENSIVE, blueprint );
+	burne( EXTENSIVE, blueprint );
 
 	return blueprint;
 };

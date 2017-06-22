@@ -1,8 +1,30 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./x10d.deploy.js">
-		</script>
+		<title>x10d unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./x10d.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "x10d unit test", function( assert ) {
+
+				let test = x10d( function Hello( ){ } );
+
+				assert.equal( typeof test == "function", true, "should return true" );
+
+				assert.equal( test[ Symbol.for( "extensive" ) ] == Symbol.for( "extensive" ), true, "should return true" );
+				
+			} );
+		</script>
+	</body>
 </html>

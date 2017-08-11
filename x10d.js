@@ -54,15 +54,13 @@
 	@include:
 		{
 			"burne": "burne",
-			"falzy": "falzy",
-			"protype": "protype"
+			"falzy": "falzy"
 		}
 	@end-include
 */
 
 const burne = require( "burne" );
 const falzy = require( "falzy" );
-const protype = require( "protype" );
 
 const EXTENSIVE = Symbol.for( "extensive" );
 
@@ -75,7 +73,7 @@ const x10d = function x10d( blueprint ){
 		@end-meta-configuration
 	*/
 
-	if( falzy( blueprint ) || !protype( blueprint, FUNCTION ) ){
+	if( falzy( blueprint ) || typeof blueprint != "function" ){
 		throw new Error( "invalid blueprint" );
 	}
 

@@ -1,47 +1,49 @@
 {
-  "name": "x10d",
-  "version": "0.5.0",
-  "description": "Marks the class as extensive.",
-  "main": "x10d.js",
-  "support": "x10d.support.js",
-  "deploy": "x10d.deploy.js",
-  "browser": "x10d.deploy.js",
-  "scripts": {
-    "build": "babel x10d.js --out-file x10d.support.js --source-maps && webpack --progress --display-modules",
-    "test": "mocha x10d-test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/volkovasystems/x10d.git"
-  },
-  "keywords": [
-    "mark",
-    "class",
-    "extensive",
-    "x10d"
-  ],
-  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-  "contributors": [
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/volkovasystems/x10d/issues"
-  },
-  "homepage": "https://github.com/volkovasystems/x10d#readme",
-  "dependencies": {
-    "babel-runtime": "^6.23.0",
-    "burne": "^0.4.0",
-    "falzy": "^0.20.0",
-    "protype": "^0.22.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.25.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-latest": "^6.24.1",
-    "source-map-loader": "^0.2.1",
-    "webpack": "^3.0.0"
-  }
+	"name": "x10d",
+	"version": "0.6.0",
+	"description": "Marks the class as extensive.",
+	"main": "x10d.js",
+	"support": "x10d.support.js",
+	"deploy": "x10d.deploy.js",
+	"browser": "x10d.deploy.js",
+	"scripts": {
+		"pristine": "rsetmod clean && flxc execute ./.install.sh",
+		"clear": "rsetmod clean --clear",
+		"build": "babel x10d.js --out-file x10d.support.js --source-maps && webpack --progress --display-modules",
+		"pretest": "npm run clear && npm run build",
+		"test": "node x10d-test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/volkovasystems/x10d.git"
+	},
+	"keywords": [
+		"mark",
+		"class",
+		"extensive",
+		"x10d"
+	],
+	"author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+	"contributors": [
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/volkovasystems/x10d/issues"
+	},
+	"homepage": "https://github.com/volkovasystems/x10d#readme",
+	"dependencies": {
+		"babel-runtime": "^6.25.0",
+		"burne": "^0.6.0",
+		"falzy": "^0.23.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-core": "^6.25.0",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-latest": "^6.24.1",
+		"source-map-loader": "^0.2.1",
+		"webpack": "^3.5.3"
+	}
 }

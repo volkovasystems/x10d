@@ -2,7 +2,6 @@ yarn add \
 babel-runtime \
 burne \
 falzy \
-protype \
 --save && \
 yarn add \
 babel-cli \
@@ -15,6 +14,5 @@ webpack \
 bower install \
 burne \
 falzy \
-protype \
 --save \
 --force-latest

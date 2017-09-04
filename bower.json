@@ -1,31 +1,27 @@
 {
-  "name": "x10d",
-  "version": "0.6.0",
-  "description": "Marks the class as extensive.",
-  "main": "x10d.deploy.js",
-  "support": "x10d.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "mark",
-    "class",
-    "extensive",
-    "x10d"
-  ],
-  "homepage": "https://github.com/volkovasystems/x10d",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "burne": "^0.6.0",
-    "falzy": "^0.23.0"
-  }
+	"name": "x10d",
+	"version": "0.6.0",
+	"description": "Marks the class as extensive.",
+	"main": "x10d.deploy.js",
+	"support": "x10d.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"mark",
+		"class",
+		"extensive",
+		"x10d"
+	],
+	"homepage": "https://github.com/volkovasystems/x10d",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
 }

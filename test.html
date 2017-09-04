@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>x10d unit test</title>
+		<meta charset="utf-8">
 
-		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+		<title>test:x10d</title>
 
-		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-
-		<script type="application/javascript" src="./x10d.deploy.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
 	</head>
 
 	<body>
-		<div id="qunit"></div>
+		<div id="mocha"></div>
 
-		<div id="qunit-fixture"></div>
+		<script type="application/javascript" src="https://unpkg.com/mocha/mocha.js"></script>
 
 		<script type="application/javascript">
-			QUnit.test( "x10d unit test", function( assert ) {
+			mocha.setup( "bdd" );
+		</script>
 
-				let test = x10d( function Hello( ){ } );
+		<script type="application/javascript" src="./test.deploy.js"></script>
 
-				assert.equal( typeof test == "function", true, "should be equal to true" );
-
-				assert.equal( test[ Symbol.for( "extensive" ) ] == Symbol.for( "extensive" ), true, "should be equal to true" );
-
-			} );
+		<script type="application/javascript">
+			mocha.run( );
 		</script>
 	</body>
 </html>

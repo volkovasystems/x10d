@@ -1,16 +1,32 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-09-04T08:58:31.347Z",
-    "end": "2017-09-04T08:58:31.348Z",
-    "duration": 1
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 2,
+		"tests": 1,
+		"passes": 1,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-09-05T11:06:18.296Z",
+		"end": "2017-09-05T11:06:18.303Z",
+		"duration": 7
+	},
+	"tests": [
+		{
+			"title": "should mark the class as extensive",
+			"fullTitle": "x10d `x10d( function Hello( ){ } )` should mark the class as extensive",
+			"duration": 4,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should mark the class as extensive",
+			"fullTitle": "x10d `x10d( function Hello( ){ } )` should mark the class as extensive",
+			"duration": 4,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }

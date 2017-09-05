@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-09-05T11:06:19.393Z",
+	"end": "2017-09-05T11:06:58.299Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "x10d",
+			"duration": 0,
+			"start": "2017-09-05T11:06:58.005Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "x10d",
+			"duration": 114,
+			"start": "2017-09-05T11:06:58.006Z",
+			"end": "2017-09-05T11:06:58.120Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-09-05T11:06:58.008Z",
+					"end": "2017-09-05T11:06:58.008Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "x10d",
+					"associatedTest": "should mark the class as extensive"
+				},
+				{
+					"start": "2017-09-05T11:06:58.119Z",
+					"end": "2017-09-05T11:06:58.119Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "x10d",
+					"associatedTest": "should mark the class as extensive"
+				},
+				{
+					"start": "2017-09-05T11:06:58.120Z",
+					"end": "2017-09-05T11:06:58.120Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "x10d"
+				}
+			]
+		},
+		{
+			"name": "`x10d( function Hello( ){ } )`",
+			"duration": 114,
+			"start": "2017-09-05T11:06:58.006Z",
+			"end": "2017-09-05T11:06:58.120Z",
+			"tests": [
+				{
+					"name": "should mark the class as extensive",
+					"start": "2017-09-05T11:06:58.007Z",
+					"end": "2017-09-05T11:06:58.119Z",
+					"duration": 112,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

@@ -63,11 +63,19 @@ const x10d = require( "./x10d.js" );
 
 
 //: @server:
-
 describe( "x10d", ( ) => {
 
-} );
+	describe( "`x10d( function Hello( ){ } )`", ( ) => {
+		it( "should mark the class as extensive", ( ) => {
+			let result = x10d( function Hello( ){ } );
 
+			assert.equal( typeof result == "function", true );
+
+			assert.equal( result[ Symbol.for( "extensive" ) ], Symbol.for( "extensive" ) );
+		} );
+	} );
+
+} );
 //: @end-server
 
 

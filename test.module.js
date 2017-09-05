@@ -67,27 +67,63 @@ const path = require( "path" );
 
 
 //: @server:
-
 describe( "x10d", ( ) => {
 
-} );
+	describe( "`x10d( function Hello( ){ } )`", ( ) => {
+		it( "should mark the class as extensive", ( ) => {
+			let result = x10d( function Hello( ){ } );
 
+			assert.equal( typeof result == "function", true );
+
+			assert.equal( result[ Symbol.for( "extensive" ) ], Symbol.for( "extensive" ) );
+		} );
+	} );
+
+} );
 //: @end-server
 
 
 //: @client:
-
 describe( "x10d", ( ) => {
 
-} );
+	describe( "`x10d( function Hello( ){ } )`", ( ) => {
+		it( "should mark the class as extensive", ( ) => {
+			let result = x10d( function Hello( ){ } );
 
+			assert.equal( typeof result == "function", true );
+
+			assert.equal( result[ Symbol.for( "extensive" ) ], Symbol.for( "extensive" ) );
+		} );
+	} );
+
+} );
 //: @end-client
 
 
 //: @bridge:
-
 describe( "x10d", ( ) => {
 
-} );
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
+	describe( "`x10d( function Hello( ){ } )`", ( ) => {
+		it( "should mark the class as extensive", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let result = x10d( function Hello( ){ } );
+
+					let test = ( typeof result == "function" ) &&
+						( result[ Symbol.for( "extensive" ) ] == Symbol.for( "extensive" ) );
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, true );
+		} );
+	} );
+
+} );
 //: @end-bridge
